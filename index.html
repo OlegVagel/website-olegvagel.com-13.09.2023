@@ -1,60 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oleg Vagel Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
     <!-- Navigation Bar for Desktop usage -->
     <nav id="desktop-nav">
-        <div class="logo">Oleg Vagel</div>
-        <div>
-            <ul class="nav-links">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#experiences">Experiences</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <div class="logo">Oleg Vagel</div>
+      <div>
+        <ul class="nav-links">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#experiences">Experiences</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- Navigation Bar for mobile usage -->
     <nav id="hamburger-nav">
-        <div class="logo">Oleg Vagel</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li>
-                    <a href="#about" onclick="toggleMenu()">About</a>
-                </li>
-                <li>
-                    <a href="#experiences" onclick="toggleMenu()">Experiences</a>
-                </li>
-                <li>
-                    <a href="#projects" onclick="toggleMenu()">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact" onclick="toggleMenu()">Contact</a>
-                </li>
-            </div>
+      <div class="logo">Oleg Vagel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li>
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+          <li>
+            <a href="#experiences" onclick="toggleMenu()">Experiences</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
     </nav>
-
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          id="profile-picture"
+          src="./assets/profile-pic.png"
+          alt="Oleg Vagel Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hallo</p>
+        <h1 class="title">Oleg Vagel</h1>
+        <p class="section__text__p2">conputer science student :D</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/checkmark.png')"
+          >
+            hellow
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='www.linkedin.com/in/oleg-vagel-4b5773268/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='www.github.com/OlegVagel'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                0+ years <br />
+                Informatik studium
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Abitur <br />
+                currently studying Informatik B.Sc Bachelors Degree
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              quisquam sunt deserunt earum nobis? In aspernatur maxime sequi?
+              Quibusdam quo nulla, enim ex cum similique magni excepturi
+              mollitia dignissimos perferendis?
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experiences'"
+      />
+    </section>
+    <section id="experiences">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">IT-Kenntnise</h2>
+            <div class="article-containers">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                  <p>Sehr gut</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS/JS</h3>
+                  <p>gut</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>gut</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>gut</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Grundkenntnisse</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <div class="article-containers">
+            <img
+              src="./assets/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='www.youtube.com'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='www.youtube.com'"
+            >
+              Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
