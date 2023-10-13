@@ -16,9 +16,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: "Pixelify Sans", "Poppins", sans-serif;
 }
 
@@ -29,6 +26,9 @@ html {
 
 p {
   color: var(--lightTextColor);
+}
+img {
+  image-rendering: pixelated;
 }
 
 /* TRANSITION */
@@ -215,6 +215,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  padding-bottom: 2vh;
 }
 
 #socials-container {
@@ -302,15 +303,13 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
 }
 
 .arrow {
@@ -375,7 +374,7 @@ section {
 article {
   display: flex;
   width: 12rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 0.5rem;
   overflow: visible;
 }
