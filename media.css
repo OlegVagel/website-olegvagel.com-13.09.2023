@@ -34,9 +34,6 @@
   .section-container {
     height: fit-content;
   }
-  section {
-    margin: 0 5%;
-  }
   .section__pic-container {
     width: 275px;
     height: 275px;
@@ -48,8 +45,7 @@
 }
 @media screen and (max-width: 600px) {
   /* TODO : FIX EXPERIENCE TEXT NOT DISPLAYING CORRECTLY */
-  #contact,
-  footer {
+  #contact {
     height: 40vh;
   }
   #profile {
